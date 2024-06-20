@@ -222,7 +222,7 @@ def quit(signum, frame):
 
 def wc_count(filename, lines=0):
 	file_handle = open(filename, 'rb')
-	while buf:=file_handle.raw.read(1024*1024):
+	while buf=file_handle.raw.read(1024*1024):
 		lines += buf.count(b'\n')
 	return lines+1
 
